@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    --background-color: #F9F9F9;
+    --main-shadow: 5px -5px 10px rgba(0, 0, 0, 0.25);
+    --main-color: #ED5656;
+}
+
+p {
+    color: #595959;
+}
+
+h1,
+h2 {
+    visibility: hidden;
+    line-height: 0;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 1000px;
+    height: 580px;
+    padding: 25px;
+    background-color: #EBEBEB;
+    box-shadow: var(--main-shadow);
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+    width: 286px;
+    height: 100%;
+    background-color: var(--background-color);
+    box-shadow: inset var(--main-shadow);
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.profile-icon {
+    align-self: center;
+    margin: 30px 0;
+    width: 140px;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    box-shadow: var(--main-shadow);
+}
+
+.profile-name {
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 40px;
+}
+
+.profile-name::before,
+.profile-name::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--main-color);
+}
+
+.black-main-font {
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.profile-light {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.profile-light-bolder {
+    margin-top: 13px;
+}
+
+.right-section {
+    width: calc(100% - 286px);
+    margin-left: 20px;
+}
+
+.cv-paragraph {
+    margin-top: 30px;
+    margin-left: 28px;
+    
+}
+
+.black-main-font {
+    
+}
+
+.paragraph-font {
+    margin-left:8px;
+    margin-top: 18px;
+}
+
+footer {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 127px;
+    height: 63px;
+    background-color: var(--background-color);
+    box-shadow: inset var(--main-shadow);
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+    padding: 9px;
+}
+
+.footer-link-icon {
+    width: 45px;
+    height: 45px;
+    box-shadow: inset 0 0 0 1px #6b6b6b;
+    border: solid #6b6b6b 1px;
+    border-radius: 50%;
+    margin-left: 6px;
+    opacity: 0.9;
+}
+
+.created-year {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    color: #B5B5B5;
+}
