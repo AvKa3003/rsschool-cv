@@ -23,6 +23,24 @@ h2 {
     visibility: hidden;
     line-height: 0;
 }
+
+a {
+    color: #505050;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #1f1f1f;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul > li {
+    list-style-type: none;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
@@ -43,7 +61,7 @@ h2 {
     box-shadow: var(--main-shadow);
 }
 
-.left-section {
+.aside-section {
     display: flex;
     flex-direction: column;
     padding: 0 25px;
@@ -97,7 +115,7 @@ h2 {
     margin-top: 13px;
 }
 
-.right-section {
+.description-section {
     width: calc(100% - 286px);
     margin-left: 20px;
 }
@@ -113,6 +131,7 @@ h2 {
 }
 
 .paragraph-font {
+    color: #595959;
     margin-left:8px;
     margin-top: 18px;
 }
